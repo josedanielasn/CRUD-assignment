@@ -1,0 +1,43 @@
+<h1>User#edit</h1>
+<p>Find me in app/views/user/edit.html.erb</p>
+
+<h1>Edit user</h1>
+
+<p>
+  <% if @user.errors.any? %>
+    <ul>
+      <% @user.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <%end%>
+    </ul>
+  <%end%>
+</p>
+
+<%= form_with scope: :user, url: update_user_path(@user), method: :patch, local: true do |f| %>
+
+<p>
+<%= f.label :name %><br/>
+<%= f.text_field :name %>
+</p>
+<p>
+<%= f.label :age %><br/>
+<%= f.text_field :age %>
+</p>
+<p>
+<%= f.label :month_of_birth %><br/>
+<%= f.text_field :month_of_birth %>
+</p>
+<p>
+<%= f.label :year_of_birth %><br/>
+<%= f.text_field :year_of_birth %>
+</p>
+<p>
+<%= f.label :favorite_color %><br/>
+<%= f.text_field :favorite_color %>
+</p>
+
+<%= f.submit %>
+
+<% end %>
+
+<%= link_to 'Back', users_path %>

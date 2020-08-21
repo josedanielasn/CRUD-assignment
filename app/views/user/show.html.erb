@@ -1,0 +1,23 @@
+<h1>User#show</h1>
+<p>Find me in app/views/user/show.html.erb</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @user.age %>
+</p
+
+<p>
+  <strong>Favorite Color:</strong>
+  <%= @user.favorite_color %>
+</p
+
+<span> <%= link_to 'Back', users_path%></span>
+<span> <%= link_to 'Edit', edit_user_path%></span>
+<span> <%= link_to 'Delete', delete_user_path, method: :delete%> </span>
+
+

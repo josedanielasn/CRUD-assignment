@@ -1,0 +1,29 @@
+<h1>User#create</h1>
+<p>Find me in app/views/user/create.html.erb</p>
+
+<h1>Create a new user</h1>
+
+<%= form_with scope: :user, url: user_create, local: true do |f| %>
+
+<p>
+<%= f.label :name %><br/>
+<%= f.text_field :name %>
+</p>
+<p>
+<%= f.label :age %><br/>
+<%= f.text_field :age %>
+</p>
+<p>
+<%= f.label :month_of_birth %><br/>
+<%= f.text_field :month_of_birth %>
+</p>
+<p>
+<%= f.label :year_of_birth %><br/>
+<%= f.text_field :year_of_birth %>
+</p>
+<p>
+<%= f.label :favorite_color %><br/>
+<%= f.text_field :favorite_color %>
+</p>
+
+<% end %>

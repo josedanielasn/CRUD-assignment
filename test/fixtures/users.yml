@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  age: 1
+  month_of_birth: MyString
+  year_of_birth: 1
+  favorite_color: MyString
+
+two:
+  name: MyString
+  age: 1
+  month_of_birth: MyString
+  year_of_birth: 1
+  favorite_color: MyString
